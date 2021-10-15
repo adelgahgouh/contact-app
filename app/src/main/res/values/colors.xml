@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#25ae90</color>
+    <color name="colorPrimaryDark">#25ae90</color>
+    <color name="colorAccent">#F44336</color>
+
+    <color name="whiteTransparentHalf">#80ffffff</color>
+    <color name="basecolor">#25ae90</color>
+    <color name="white">#ffffff</color>
+    <color name="contactcolor">#1C6EFF</color>
+
+</resources>

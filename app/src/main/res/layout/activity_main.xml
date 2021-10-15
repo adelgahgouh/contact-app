@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/basecolor"
+        android:src="@drawable/ic_add"
+      android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/setupToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/basecolor"
+            app:titleTextColor="@color/white"
+            app:title="@string/app_name"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+
+          ></androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/basecolor"
+            android:layout_weight="0.2"
+            >
+
+            <ImageView
+                android:id="@+id/imgmain"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/default_image"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                android:layout_weight="0.5"
+                >
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Full name:"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/tvcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Number of Contacts:"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:id="@+id/lv"
+    ></ListView>
+    </LinearLayout>
+</RelativeLayout>
